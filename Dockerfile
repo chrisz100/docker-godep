@@ -1,5 +1,5 @@
 FROM golang:latest
-ENV GO111MODULE on
+ENV GO111MODULE auto
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 RUN apt update && apt install -y vim pkg-config zip g++ zlib1g-dev unzip python && \
 	rm -Rf /var/cache/apt/*
